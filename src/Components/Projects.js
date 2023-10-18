@@ -132,6 +132,15 @@ function Projects() {
               <li>CSS</li>
               <li>React.js</li>
             </ul>
+            <p>
+              GitHub:{" "}
+              <a
+                href="https://github.com/akshay124-pixel/Portfolio"
+                target="_blank"
+              >
+                https://github.com/akshay124-pixel/Portfolio
+              </a>
+            </p>
           </div>
         </div>
         <div className="col-md-5">

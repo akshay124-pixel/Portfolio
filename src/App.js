@@ -27,4 +27,3 @@ function App() {
   );
 }
 export default App;
-https://github.com/akshay124-pixel/Portfolio.gitgit remote add origin <https://github.com/akshay124-pixel/Portfolio.>

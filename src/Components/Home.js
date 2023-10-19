@@ -7,7 +7,11 @@ function Home() {
     transition: "background-color 0.3s", // Smooth transition effect
     backgroundColor: "transparent", // Default background color
   };
-
+  const styles1 = {
+    customFont1: {
+      fontFamily: "'Acme', sans-serif",
+    },
+  };
   const hoverStyle = {
     backgroundColor: "lightblue",
     borderRadius: "20px",
@@ -17,6 +21,13 @@ function Home() {
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
+
+  const styles = {
+    customFont: {
+      fontFamily: "Young Serif, serif",
+    },
+  };
+
   return (
     <div>
       {/* Carousel Start */}
@@ -57,17 +68,17 @@ function Home() {
               height="600px"
             />
             <div className="carousel-caption text-start">
-              <h1>About Me</h1>
-              <p className="opacity-75">
+              <h1 style={styles.customFont}>About Me</h1>
+              <p className="opacity-75" style={styles1.customFont1}>
                 I'm Akshay, a web developer with a strong passion for creating
                 beautiful and functional websites. With a keen eye for design
                 and a love for coding, I'm dedicated to delivering high-quality
                 web solutions.
               </p>
               <p>
-                <a className="btn btn-lg btn-primary" href="#">
+                <Link className="btn btn-lg btn-primary" to="/About">
                   About
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -79,16 +90,11 @@ function Home() {
               height="600px"
             />
             <div className="carousel-caption">
-              <h1>Welcome to Akshay's Portfolio</h1>
-              <p>
+              <h1 style={styles.customFont}>Welcome to Akshay's Portfolio</h1>
+              <p style={styles1.customFont1}>
                 I'm a passionate and creative developer with a strong background
                 in web development and design. My goal is to create beautiful,
                 responsive, and user-friendly web applications.
-              </p>
-              <p>
-                <a className="btn btn-lg btn-primary" href="#">
-                  Learn more
-                </a>
               </p>
             </div>
           </div>
@@ -100,13 +106,13 @@ function Home() {
               height="600px"
             />
             <div className="carousel-caption text-end">
-              <h1>Contact Me</h1>
-              <p>
+              <h1 style={styles.customFont}>Contact Me</h1>
+              <p style={styles1.customFont1}>
                 If you'd like to get in touch or discuss potential projects,
                 feel free to reach out to me.
               </p>
               <p>
-                <Link className="btn btn-lg btn-primary" to="/">
+                <Link className="btn btn-lg btn-primary" to="/ContactForm">
                   Contact
                 </Link>
               </p>
